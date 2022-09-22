@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono&family=Work+Sans&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.Nav {
+  border: 1px solid lightgrey;
+  background-color: #b5b2b2;
+  font-family: "Roboto", sans-serif;
+}
+.Nav .Nav__text {
+  font-size: 18px;
+}
+.Nav .Nav__text--me {
+  font-weight: bold;
+}
+.Nav .Nav__tag {
+  text-decoration: none;
+  font-size: 18px;
+  color: #1f568e;
+}
+.Nav .Nav__button {
+  background-color: #27bbfad2;
+  box-shadow: 2px 2px 2px 2px lightgray;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.Nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 1rem;
+}
+.Nav .Nav__text--me {
+  padding-right: 15rem;
+}
+.Nav .Nav__sub {
+  display: flex;
+  flex-direction: row;
+  width: 40rem;
+  justify-content: space-between;
+}
+.Nav .Nav__button {
+  width: 12rem;
+  margin-left: 5rem;
+}

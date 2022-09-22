@@ -1,0 +1,22 @@
+.Nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 1rem;
+    .Nav__text {
+        &--me {
+            padding-right: 15rem;
+        }
+    }
+    .Nav__sub {
+        display: flex;
+        flex-direction: row;
+        width: 40rem;
+        justify-content: space-between;
+    }
+    .Nav__button{
+        width: 12rem;
+        margin-left: 5rem;
+    }
+
+}

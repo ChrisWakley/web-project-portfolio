@@ -1,0 +1,24 @@
+@use"./_base.scss" as *;
+
+.Nav {
+    border: 1px solid lightgrey;
+    background-color: $color-nav;
+    font-family: $font-display;
+    .Nav__text {
+        font-size: 18px;
+        &--me {
+            font-weight: bold;
+        }
+    }
+    .Nav__tag{
+        text-decoration: none;
+        font-size: 18px;
+        color: $color-primary;
+    }
+    .Nav__button {
+        background-color: $color-secondary;
+        box-shadow: 2px 2px 2px 2px lightgray;
+        border-radius: 5px;
+        text-align: center;
+    }
+}
