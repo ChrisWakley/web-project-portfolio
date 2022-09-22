@@ -1,6 +1,5 @@
 .Nav {
     display: flex;
-    flex-direction: row;
     justify-content: space-evenly;
     padding: 1rem;
     .Nav__text {
@@ -10,13 +9,23 @@
     }
     .Nav__sub {
         display: flex;
-        flex-direction: row;
         width: 40rem;
         justify-content: space-between;
     }
-    .Nav__button{
+    .Nav__button {
         width: 12rem;
         margin-left: 5rem;
     }
 
+}
+.main__container {
+    display: flex;
+    justify-content: space-between;
+    padding: 5rem 12rem;
+        .hero__img {
+            &--selfie {
+            height: 50vh;
+            width: 35vh;
+        }
+    }
 }

@@ -1,5 +1,16 @@
 @use"./_base.scss" as *;
 
+body {
+    background-color: $color-body;
+}
+
+button {
+    background-color: $color-secondary;
+    text-align: center;
+    box-shadow: 2px 2px 2px 2px lightgray;
+    border-radius: 5px;
+}
+
 .Nav {
     border: 1px solid lightgrey;
     background-color: $color-nav;
@@ -15,10 +26,12 @@
         font-size: 18px;
         color: $color-primary;
     }
-    .Nav__button {
-        background-color: $color-secondary;
-        box-shadow: 2px 2px 2px 2px lightgray;
-        border-radius: 5px;
-        text-align: center;
+}
+
+main {
+    .hero {
+        background-color: $color-white;
+        border: 2px solid black;
     }
 }
+

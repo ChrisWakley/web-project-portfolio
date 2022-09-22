@@ -4,6 +4,17 @@
   padding: 0;
 }
 
+body {
+  background-color: #ece9e9;
+}
+
+button {
+  background-color: #27bbfad2;
+  text-align: center;
+  box-shadow: 2px 2px 2px 2px lightgray;
+  border-radius: 5px;
+}
+
 .Nav {
   border: 1px solid lightgrey;
   background-color: #b5b2b2;
@@ -20,16 +31,14 @@
   font-size: 18px;
   color: #1f568e;
 }
-.Nav .Nav__button {
-  background-color: #27bbfad2;
-  box-shadow: 2px 2px 2px 2px lightgray;
-  border-radius: 5px;
-  text-align: center;
+
+main .hero {
+  background-color: #fafafa;
+  border: 2px solid black;
 }
 
 .Nav {
   display: flex;
-  flex-direction: row;
   justify-content: space-evenly;
   padding: 1rem;
 }
@@ -38,11 +47,20 @@
 }
 .Nav .Nav__sub {
   display: flex;
-  flex-direction: row;
   width: 40rem;
   justify-content: space-between;
 }
 .Nav .Nav__button {
   width: 12rem;
   margin-left: 5rem;
+}
+
+.main__container {
+  display: flex;
+  justify-content: space-between;
+  padding: 5rem 12rem;
+}
+.main__container .hero__img--selfie {
+  height: 50vh;
+  width: 35vh;
 }
