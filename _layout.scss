@@ -41,7 +41,7 @@
         "body body body"
         "body body body"
         ". . ."
-        ". button button"
+        ". . button"
     }
     .hero__subcontainer {
         grid-area: title;
@@ -56,7 +56,7 @@
         flex-wrap: wrap;
         justify-content: center;
         .bolded{
-            padding-left: 5rem;
+            padding-left: 12px;
         }
     }
     .hero__button {

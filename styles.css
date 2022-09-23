@@ -90,7 +90,7 @@ button {
   grid-template-rows: auto;
   height: 50vh;
   margin-right: 3rem;
-  grid-template-areas: "title title title" "body body body" "body body body" "body body body" ". . ." ". button button";
+  grid-template-areas: "title title title" "body body body" "body body body" "body body body" ". . ." ". . button";
 }
 .main__container .hero__subcontainer {
   grid-area: title;
@@ -106,7 +106,7 @@ button {
   justify-content: center;
 }
 .main__container .hero__text--body .bolded {
-  padding-left: 5rem;
+  padding-left: 12px;
 }
 .main__container .hero__button {
   grid-area: button;
