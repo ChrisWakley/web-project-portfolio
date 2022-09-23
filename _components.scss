@@ -15,23 +15,45 @@ button {
     border: 1px solid lightgrey;
     background-color: $color-nav;
     font-family: $font-display;
+    
     .Nav__text {
         font-size: 18px;
         &--me {
             font-weight: bold;
         }
     }
-    .Nav__tag{
+    .Nav__tag {
+
         text-decoration: none;
         font-size: 18px;
         color: $color-primary;
+        
     }
 }
 
-main {
-    .hero {
-        background-color: $color-white;
-        border: 2px solid black;
+.main__container {
+    .hero__container {
+        .hero__text {
+            font-family: $font-body;
+            font-size: 12px;
+            &--title {
+                font-family: $font-field;
+                font-size: 24px;
+            }
+            &--body {
+                font-size: 36px;
+            }
+        }
     }
 }
 
+.skills__container {
+    .skills__text {
+        font-family: $font-body;
+        font-size: 12px;
+        &--title {
+            font-family: $font-field;
+            font-size: 24px;
+        }
+    }
+}

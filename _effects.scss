@@ -1,0 +1,9 @@
+@use"./_base.scss" as *;
+
+.Nav__tag:hover {
+    color: $color-secondary;
+}
+
+.skills__img:hover {
+    opacity: 50%;
+}
