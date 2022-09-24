@@ -23,11 +23,9 @@ button {
         }
     }
     .Nav__tag {
-
         text-decoration: none;
         font-size: 18px;
         color: $color-primary;
-        
     }
 }
 
@@ -55,5 +53,36 @@ button {
             font-family: $font-field;
             font-size: 24px;
         }
+    }
+}
+
+.project__container {
+    .project__text--header {
+        font-family: $font-field;
+        font-size: 24px;
+    }
+    .card__text {
+        &--language {
+            font-family: $font-body;
+            font-size: 14px;
+            color: $color-primary;
+        }
+        &--title {
+            font-family: $font-field;
+            font-size: 32px;
+        }
+        &--blurb {
+            font-family: $font-body;
+            font-size: 14px;
+        }
+    }
+    .card__imgcontainer {
+        background-color: $color-primary;
+    }
+    .card__link {
+        font-family: $font-display;
+        text-decoration: none;
+        font-size: 18px;
+        color: $color-primary;
     }
 }
