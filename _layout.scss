@@ -97,9 +97,40 @@
         padding: 3rem 0rem;
         }
     }
+    .project__gridcontainer {
+        padding-left: 8rem;
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 45% 10% 45%;
+        height: auto;
+        grid-template-areas: 
+        "one two three"
+        ". . ."
+        "four five six"
+        
+    }
     .card__container {
         width: 50vh;
-        .card__imgcontainer {
+        &--1 {
+            grid-area: one;
+        }
+        &--2 {
+            grid-area: two;
+        }
+        &--3 {
+            grid-area: three;
+        }
+        &--4 {
+            grid-area: four;
+        }
+        &--5 {
+            grid-area: five;
+        }
+        &--6 {
+            grid-area: six;
+        }
+        .card__imagecontainer {
             display: flex;
             height: 40vh;
             width: 50vh;
@@ -115,10 +146,13 @@
             flex-direction: column;
             width: 50vh;
             height: 25vh;
-            justify-content: left;
-            flex-wrap: wrap;
             justify-content: space-between;
-            padding: 2rem 0rem;
+            &--language {
+                padding-top: 2rem;
+            }
+            &--blurb {
+                padding-bottom: 2rem;
+            }
         }
         .card__link {
             display: flex;
@@ -126,6 +160,5 @@
             align-items: center;
             justify-content: space-evenly;
         }
-        
     }
 }

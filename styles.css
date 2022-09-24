@@ -74,7 +74,7 @@ button {
   font-family: "Roboto Mono", cursive;
   font-size: 14px;
 }
-.project__container .card__imgcontainer {
+.project__container .card__imagecontainer {
   background-color: #1f568e;
 }
 .project__container .card__link {
@@ -171,17 +171,44 @@ button {
 .project__container .project__text--header {
   padding: 3rem 0rem;
 }
+.project__container .project__gridcontainer {
+  padding-left: 8rem;
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 45% 10% 45%;
+  height: auto;
+  grid-template-areas: "one two three" ". . ." "four five six";
+}
 .project__container .card__container {
   width: 50vh;
 }
-.project__container .card__container .card__imgcontainer {
+.project__container .card__container--1 {
+  grid-area: one;
+}
+.project__container .card__container--2 {
+  grid-area: two;
+}
+.project__container .card__container--3 {
+  grid-area: three;
+}
+.project__container .card__container--4 {
+  grid-area: four;
+}
+.project__container .card__container--5 {
+  grid-area: five;
+}
+.project__container .card__container--6 {
+  grid-area: six;
+}
+.project__container .card__container .card__imagecontainer {
   display: flex;
   height: 40vh;
   width: 50vh;
   justify-content: center;
   align-items: end;
 }
-.project__container .card__container .card__imgcontainer--placeholder {
+.project__container .card__container .card__imagecontainer--placeholder {
   height: 30vh;
   width: 45vh;
 }
@@ -190,10 +217,13 @@ button {
   flex-direction: column;
   width: 50vh;
   height: 25vh;
-  justify-content: left;
-  flex-wrap: wrap;
   justify-content: space-between;
-  padding: 2rem 0rem;
+}
+.project__container .card__container .card__text--language {
+  padding-top: 2rem;
+}
+.project__container .card__container .card__text--blurb {
+  padding-bottom: 2rem;
 }
 .project__container .card__container .card__link {
   display: flex;
