@@ -86,3 +86,16 @@ button {
         color: $color-primary;
     }
 }
+
+.about__header {
+    .about__text {
+        &--header {
+            font-family: $font-field;
+            font-size: 32px;
+        }
+        &--body {
+            font-family: $font-body;
+            font-size: 14px;
+        }
+    }
+}

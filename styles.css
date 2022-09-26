@@ -84,6 +84,15 @@ button {
   color: #1f568e;
 }
 
+.about__header .about__text--header {
+  font-family: "Work Sans", sans-serif;
+  font-size: 32px;
+}
+.about__header .about__text--body {
+  font-family: "Roboto Mono", cursive;
+  font-size: 14px;
+}
+
 .Nav {
   display: flex;
   justify-content: space-evenly;
@@ -164,6 +173,7 @@ button {
 
 .project__container {
   width: 100%;
+  padding-bottom: 10rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -172,8 +182,8 @@ button {
   padding: 3rem 0rem;
 }
 .project__container .project__gridcontainer {
-  padding-left: 8rem;
   display: grid;
+  padding-left: 3rem;
   width: 100%;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 45% 10% 45%;
@@ -230,6 +240,27 @@ button {
   width: 30vh;
   align-items: center;
   justify-content: space-evenly;
+}
+
+.about__container {
+  display: flex;
+  width: 100%;
+  height: 45vh;
+  justify-content: space-between;
+}
+.about__container .about__header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.about__container .about__header .about__text {
+  width: 75%;
+}
+.about__container .about__image {
+  height: 35vh;
+  padding-right: 3rem;
 }
 
 .Nav__tag:hover {

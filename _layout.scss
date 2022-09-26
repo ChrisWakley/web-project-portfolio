@@ -16,7 +16,6 @@
         width: 12rem;
         margin-left: 5rem;
     }
-
 }
 
 .main__container {
@@ -89,6 +88,7 @@
 
 .project__container {
     width: 100%;
+    padding-bottom: 10rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -98,8 +98,8 @@
         }
     }
     .project__gridcontainer {
-        padding-left: 8rem;
         display: grid;
+        padding-left: 3rem;
         width: 100%;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 45% 10% 45%;
@@ -108,7 +108,6 @@
         "one two three"
         ". . ."
         "four five six"
-        
     }
     .card__container {
         width: 50vh;
@@ -161,4 +160,27 @@
             justify-content: space-evenly;
         }
     }
+}
+
+.about__container {
+    display: flex;
+    width: 100%;
+    height: 45vh;
+    justify-content: space-between;
+
+    .about__header{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+        .about__text {
+            width: 75%;
+    }
+    }
+    .about__image {
+        height: 35vh;
+        padding-right: 3rem;
+    }
+
 }
