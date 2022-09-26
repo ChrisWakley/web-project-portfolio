@@ -78,12 +78,13 @@
     .skills__text {
         padding: 1rem;
     }
-    .skills__container--img {
-        display: flex;
-        width: 100%;
-        justify-content: space-evenly;
-        padding: 2rem 0rem;
-    }
+        &--img {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            justify-content: space-evenly;
+            padding: 2rem 0rem;
+        }
 }
 
 .project__container {
@@ -299,12 +300,117 @@
                         }
                     }
                 }
-        }
-        .about__container {
-            padding-bottom: 3rem;
-        }
+    }
+    .about__container {
+        padding-bottom: 3rem;
+    }
 }
 
 @media screen and (max-width: 480px) {
-
+    .Nav {
+        .Nav__sub {
+            width: 20rem;
+        }
+        .Nav__button {
+            width: 8rem;
+        }
+    }
+    .main__container {
+        display: flex;
+        justify-content: space-evenly;
+        padding: 1rem;
+            .hero__img {
+                &--selfie {
+                height: 51vh;
+                width: 35vh;
+            }
+        }
+        .hero__container{
+            display: grid;
+            height: 30vh;
+            margin-right: 0rem;
+            grid-template-areas: 
+            "title title title"
+            "body body body"
+            "body body body"
+            "button button button"
+        }
+    }
+    .skills__container {
+        height: 26rem;
+            &--img {
+                flex-wrap: wrap;
+                flex-direction: column;
+            }
+    }
+    .project__container {
+        height: auto;
+        width: 100%;
+        padding-top: 6rem;
+        padding-bottom: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .project__text {
+            &--header {
+            padding: 2rem 0rem;
+            }
+        }
+        .project__gridcontainer {
+            display: grid;
+            height: auto;
+            width: 100%;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            justify-items: center;
+            grid-template-areas: 
+            "one"
+            "two"
+            "three"
+            "four"
+            "five"
+            "six"
+        }
+        .card__container {
+            width: 50vh;
+            padding: 1rem 0rem;
+            &--1 {
+                grid-area: one;
+            }
+            &--2 {
+                grid-area: two;
+            }
+            &--3 {
+                grid-area: three;
+            }
+            &--4 {
+                grid-area: four;
+            }
+            &--5 {
+                grid-area: five;
+            }
+            &--6 {
+                grid-area: six;
+            }
+        }
+    }
+    .about__container {
+        height: 80vh;
+        align-items: center;
+        .about__header {
+            .about__text {
+                padding: 1rem 0rem;
+            }
+        }
+    }
+    .foot {
+        height: 8rem;
+        flex-direction: column;
+        padding: 0rem 0rem;
+        .foot__text {
+            &--email {
+                padding-left: 0rem;
+            }
+        }
+    }
 }
