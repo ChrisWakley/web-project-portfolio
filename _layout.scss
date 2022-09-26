@@ -99,7 +99,7 @@
     }
     .project__gridcontainer {
         display: grid;
-        padding-left: 3rem;
+        padding-left: 6rem;
         width: 100%;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 45% 10% 45%;
@@ -167,6 +167,7 @@
     width: 100%;
     height: 45vh;
     justify-content: space-between;
+    padding-bottom: 5rem;
 
     .about__header{
         display: flex;
@@ -180,7 +181,130 @@
     }
     .about__image {
         height: 35vh;
+        padding-right: 6rem;
+    }
+}
+
+.foot {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    .foot__text {
+        &--email {
+            padding-left: 3rem;
+        }
+    }
+    .foot__container {
         padding-right: 3rem;
     }
+}
+
+@media screen and (min-width: 1025px) {
+    body {
+        width: 100%;
+    }
+    .about__container {
+        .about__image {
+            height: 35vh;
+            padding-right: 6rem;
+        }
+        .hero__img {
+            &--selfie {
+            display: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1025px) {
+    body {
+        width: 100%;
+        .main__container {
+            .hero__img {
+                &--selfie {
+                    display: none;
+                }
+            }
+        }
+    }
+    .project__container {
+        .project__gridcontainer {
+            padding-left: 1rem;
+        }
+    }
+    .about__container {
+        .about__image {
+            display: none;
+        }
+        .hero__img {
+            &--selfie {
+            height: 35vh;
+            padding-right: 6rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .Nav {
+        display: flex;
+        justify-content: space-evenly;
+        padding: 1rem;
+        .Nav__text {
+            &--me {
+                padding-right: 0rem;
+            }
+        }
+        .Nav__sub {
+            display: flex;
+            width: 40rem;
+            justify-content: space-between;
+        }
+        .Nav__button {
+            width: 12rem;
+            margin-left: 0rem;
+        }
+    }
+    .main__container {
+        padding: 5rem 5rem;
+    }
+    .skills__container {
+        padding: 1rem 0rem;
+    }
+    .project__container {
+        height: 145vh;
+        padding-bottom: 4rem;
+        .project__gridcontainer {
+            padding-left: 0rem;
+                .card__container {
+                    width: 40vh;
+                    .card__imagecontainer {
+                        height: 30vh;
+                        width: 41vh;
+                            &--placeholder {
+                                height: 25vh;
+                                width: 35vh;
+                            }
+                        }
+                    }
+                    .card__text {
+                        width: 40vh;
+                        height: 25vh;
+                        &--language {
+                            padding-top: 1rem;
+                        }
+                        &--blurb {
+                            padding-bottom: 1rem;
+                        }
+                    }
+                }
+        }
+        .about__container {
+            padding-bottom: 3rem;
+        }
+}
+
+@media screen and (max-width: 480px) {
 
 }

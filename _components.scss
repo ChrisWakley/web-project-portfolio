@@ -99,3 +99,57 @@ button {
         }
     }
 }
+
+.foot {
+    border: 1px solid lightgrey;
+    background-color: $color-nav;
+        .foot__text {
+            font-family: $font-display;
+            &--copyright {
+                font-size: 12px;
+            }
+        }
+}
+
+@media screen and (max-width: 770px) {
+    .Nav {
+        .Nav__text {
+            font-size: 14px;
+        }
+        .Nav__tag {
+            font-size: 14px;
+        }
+    }
+    .project__container {
+        .project__text--header {
+            font-size: 20px;
+        }
+        .card__text {
+            &--language {
+                font-size: 10px;
+            }
+            &--title {
+                font-size: 16px;
+            }
+            &--blurb {
+                font-size: 10px;
+            }
+        }
+        .card__imagecontainer {
+            background-color: $color-primary;
+        }
+        .card__link {
+            font-size: 14px;
+        }
+    }
+    .about__header {
+        .about__text {
+            &--header {
+                font-size: 18px;
+            }
+            &--body {
+                font-size: 12px;
+            }
+        }
+    }
+}

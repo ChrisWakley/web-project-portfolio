@@ -93,6 +93,51 @@ button {
   font-size: 14px;
 }
 
+.foot {
+  border: 1px solid lightgrey;
+  background-color: #b5b2b2;
+}
+.foot .foot__text {
+  font-family: "Roboto", sans-serif;
+}
+.foot .foot__text--copyright {
+  font-size: 12px;
+}
+
+@media screen and (max-width: 770px) {
+  .Nav .Nav__text {
+    font-size: 14px;
+  }
+  .Nav .Nav__tag {
+    font-size: 14px;
+  }
+
+  .project__container .project__text--header {
+    font-size: 20px;
+  }
+  .project__container .card__text--language {
+    font-size: 10px;
+  }
+  .project__container .card__text--title {
+    font-size: 16px;
+  }
+  .project__container .card__text--blurb {
+    font-size: 10px;
+  }
+  .project__container .card__imagecontainer {
+    background-color: #1f568e;
+  }
+  .project__container .card__link {
+    font-size: 14px;
+  }
+
+  .about__header .about__text--header {
+    font-size: 18px;
+  }
+  .about__header .about__text--body {
+    font-size: 12px;
+  }
+}
 .Nav {
   display: flex;
   justify-content: space-evenly;
@@ -183,7 +228,7 @@ button {
 }
 .project__container .project__gridcontainer {
   display: grid;
-  padding-left: 3rem;
+  padding-left: 6rem;
   width: 100%;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 45% 10% 45%;
@@ -247,6 +292,7 @@ button {
   width: 100%;
   height: 45vh;
   justify-content: space-between;
+  padding-bottom: 5rem;
 }
 .about__container .about__header {
   display: flex;
@@ -260,9 +306,115 @@ button {
 }
 .about__container .about__image {
   height: 35vh;
+  padding-right: 6rem;
+}
+
+.foot {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.foot .foot__text--email {
+  padding-left: 3rem;
+}
+.foot .foot__container {
   padding-right: 3rem;
 }
 
+@media screen and (min-width: 1025px) {
+  body {
+    width: 100%;
+  }
+
+  .about__container .about__image {
+    height: 35vh;
+    padding-right: 6rem;
+  }
+  .about__container .hero__img--selfie {
+    display: none;
+  }
+}
+@media screen and (max-width: 1025px) {
+  body {
+    width: 100%;
+  }
+  body .main__container .hero__img--selfie {
+    display: none;
+  }
+
+  .project__container .project__gridcontainer {
+    padding-left: 1rem;
+  }
+
+  .about__container .about__image {
+    display: none;
+  }
+  .about__container .hero__img--selfie {
+    height: 35vh;
+    padding-right: 6rem;
+  }
+}
+@media screen and (max-width: 770px) {
+  .Nav {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem;
+  }
+  .Nav .Nav__text--me {
+    padding-right: 0rem;
+  }
+  .Nav .Nav__sub {
+    display: flex;
+    width: 40rem;
+    justify-content: space-between;
+  }
+  .Nav .Nav__button {
+    width: 12rem;
+    margin-left: 0rem;
+  }
+
+  .main__container {
+    padding: 5rem 5rem;
+  }
+
+  .skills__container {
+    padding: 1rem 0rem;
+  }
+
+  .project__container {
+    height: 145vh;
+    padding-bottom: 4rem;
+  }
+  .project__container .project__gridcontainer {
+    padding-left: 0rem;
+  }
+  .project__container .project__gridcontainer .card__container {
+    width: 40vh;
+  }
+  .project__container .project__gridcontainer .card__container .card__imagecontainer {
+    height: 30vh;
+    width: 41vh;
+  }
+  .project__container .project__gridcontainer .card__container .card__imagecontainer--placeholder {
+    height: 25vh;
+    width: 35vh;
+  }
+  .project__container .project__gridcontainer .card__text {
+    width: 40vh;
+    height: 25vh;
+  }
+  .project__container .project__gridcontainer .card__text--language {
+    padding-top: 1rem;
+  }
+  .project__container .project__gridcontainer .card__text--blurb {
+    padding-bottom: 1rem;
+  }
+
+  .about__container {
+    padding-bottom: 3rem;
+  }
+}
 .Nav__tag:hover {
   color: #27bbfade;
 }
@@ -272,5 +424,13 @@ button {
 }
 
 .card__link:hover {
+  color: #27bbfade;
+}
+
+.foot__img:hover {
+  opacity: 50%;
+}
+
+.foot__text--email:hover {
   color: #27bbfade;
 }
