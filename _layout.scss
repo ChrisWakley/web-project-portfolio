@@ -397,6 +397,11 @@
     .about__container {
         height: 70vh;
         align-items: center;
+        .hero__img{
+            &--selfie {
+                padding-right: 2rem;
+            }
+        }
         .about__header {
             .about__text {
                 padding: 1rem 0rem;

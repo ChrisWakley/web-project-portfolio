@@ -511,6 +511,9 @@ button {
     height: 70vh;
     align-items: center;
   }
+  .about__container .hero__img--selfie {
+    padding-right: 2rem;
+  }
   .about__container .about__header .about__text {
     padding: 1rem 0rem;
   }
