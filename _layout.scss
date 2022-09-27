@@ -397,8 +397,7 @@
     .about__container {
         height: 70vh;
         align-items: center;
-        .hero__img{
-            &--selfie {
+        .hero__img--selfie {
                 padding-right: 2rem;
             }
         }
@@ -418,4 +417,3 @@
             }
         }
     }
-}

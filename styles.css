@@ -514,19 +514,20 @@ button {
   .about__container .hero__img--selfie {
     padding-right: 2rem;
   }
-  .about__container .about__header .about__text {
+
+  .about__header .about__text {
     padding: 1rem 0rem;
   }
-
-  .foot {
-    height: 8rem;
-    flex-direction: column;
-    padding: 0rem 0rem;
-  }
-  .foot .foot__text--email {
-    padding-left: 0rem;
-  }
 }
+.foot {
+  height: 8rem;
+  flex-direction: column;
+  padding: 0rem 0rem;
+}
+.foot .foot__text--email {
+  padding-left: 0rem;
+}
+
 .Nav__tag:hover {
   color: #27bbfade;
 }
