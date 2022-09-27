@@ -148,6 +148,10 @@ button {
   .main__container .hero__container .hero__subcontainer .hero__text--title {
     font-size: 16px;
   }
+
+  .about__container .about__header .about__text {
+    font-size: 8px;
+  }
 }
 .Nav {
   display: flex;
@@ -504,7 +508,7 @@ button {
   }
 
   .about__container {
-    height: 80vh;
+    height: 70vh;
     align-items: center;
   }
   .about__container .about__header .about__text {
